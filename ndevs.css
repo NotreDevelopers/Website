@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+  font-family: 'SPACECRAFT';
+  src: url('fonts/SPACECRAFT.ttf');
+}
+
+@font-face {
+  font-family: 'Solitarium';
+  src: url('fonts/Solitarium.ttf');
+}
+
+html, body{
+	/*height:100%;*/
+	margin:0;
+	padding:0;
+        background-color: #111111;
+}
+
+
+/* Navigation CSS */
+
+.nav #title {
+        font-family: 'SPACECRAFT';
+        font-size: 40px;
+        color: white;
+        text-shadow:
+            3px 3px 0 #AAA;
+        /*    3px -3px 0 #AAA,
+            -3px 3px 0 #AAA,
+            3px 3px 0 #AAA;  */
+}
+
+.nav {
+	top: 0px;
+	margin-left: 0px;
+	width: 100%;
+	position: absolute;
+	/*background: rgba(0, 0, 0, 0.65);*/
+        background: -moz-linear-gradient(top, #444444 0%, #111111 40%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #444444 0%, #111111 40%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #444444 0%, #111111 40%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	z-index: 5;
+}
+
+.nav .container {
+        
+}
+
+.nav .container .row {
+        position: relative;
+}
+
+.nav ul {
+        margin: 0px;
+}
+
+.nav li {
+        display: inline;
+}
+
+.nav li a {
+        display: inline-block;
+        font-weight: bold;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+}
+
+.nav li a:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+}
+
+.nav li a:hover:after {
+        width: 100%;
+        background: white;
+}
+
+.nav #links {
+        color: white;
+        font-size: 20px;
+}
+
+/* Homepage Jumbotron CSS */
+
+.mission {
+        color: #00ee00;
+        font-family: 'Solitarium';
+        width: 100%; 
+        word-wrap: break-word;
+        display: inline-block;
+        padding: 220px 0px 0px 0px;
+        font-size: 20px;
+}
+
+.mission p {
+        margin: 0 auto;
+        width: 900px;
+        text-align: center;
+}
+
+.index .jumbotron {
+	position: absolute;
+	/*background-color: #232729;*/
+        background-color: #111111;
+	width: 100%;
+	height: 100%;
+        min-width: 1200px;
+}
+
+.index .jumbotron .container {
+	top: 78%;
+	text-align: center;
+        position: relative;
+	transform: translate(94%, -50%);
+        width: 400px;
+}
+
+.index #text {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.65);
+	color: white;
+	text-align: center;
+        padding: 3px 23px;
+}
+
+#terminal {
+        background: black; 
+        color: #00ee00; 
+        font-family: courier new;
+        font-size: 14px;
+        letter-spacing: 4px;
+        width: 800px;
+        padding: 20px;
+        margin: 0 auto;
+        border: 5px solid gray;
+}
+
+@-webkit-keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: #00ee00; }
+}
+
+@keyframes blinking {
+    from, to { border-color: transparent; }
+    50% { border-color: #00ee00; }
+}
+
+.cursor {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-left: .5em solid;
+  display: inline;
+  -webkit-animation: blinking 1s step-end infinite;
+  animation: blinking 1s step-end infinite;
+}
+
+#boardmem {
+  font-size: 16px;
+  margin: 10px;
+  padding: 20px;
+  color: white;
+  word-wrap: break-word;
+  border: 3px #00ee00 groove;
+  /*background-color:green;*/
+  display:inline-block;
+  float:left;
+  height: 240px;
+  position: relative;
+  /*background: #000;*/
+  overflow: hidden;
+}
+
+#boardmem img {
+    opacity: 1.0;
+}
+
+#boardmem #bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+/* Footer CSS */
