@@ -6,10 +6,8 @@
     <meta name="author" content="Sean Keenan">
     <meta prefix="og: http://ogp.me/ns#" property="og:title" content="NDevs" />
     <meta prefix="og: http://ogp.me/ns#" property="og:description" content="Notre Dame's Video Game Development Club" />
-    <!--<meta prefix="og: http://ogp.me/ns#" property="og:image:url" content="http://phify.com/img/MfVltRNaTZx.png" />-->
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     <link rel="stylesheet" href="./ndevs.css">
-    <!--<link rel="shortcut icon" href="favicon.png"/>-->
     <title>NDevs</title>
     <script type="text/javascript" src="getdate.js"></script>
     <script>
@@ -21,23 +19,36 @@
           ga('create', 'UA-43025367-1', 'auto');
           ga('send', 'pageview');
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Test Script -->
+    <script>
+        $('button').click(function(){ //you can give id or class name here for $('button')
+            $(this).text(function(i,old){
+                return old=='+' ?  '-' : '+';
+            });
+        });
+    </script>
+});
 </head>
 
 <body class="index">
 
 <div class="nav">
         <div class="container">
-                <div class="row" style="padding:30px 0px 15px 0px;">
-                        <div class="col-lg-12 text-center">
-                                <ul>
-                                        <li><a id="title" href="http://www3.nd.edu/~ndevs/">NDevs</a></li>
-                                </ul>
+                <div class="row" style="padding:40px 0px 15px 0px" align="center">
+                                <a id="title" href="http://www3.nd.edu/~ndevs/" style="text-decoration:none">NotreDevelopers</a>
+                                <img src="images/NDevsLogo(body).png" alt="NDevs Logo" width="150px" height="150px"
+                                    style="position:absolute; margin-top:-30px; margin-left:10px"></img>
+                                <p id="links" style="position:absolte; margin-top:0px; color:#0C2340">Notre Dame's video game development club</p>
                         </div>
                 </div>
-                <div class="row" style="margin-bottom:10px;">
+                <div class="row" style="margin-bottom:10px; background-color:#0C2340">
                         <div class="col-lg-12 text-center">
                                 <ul>
-                                        <li style="padding:0px 30px;"><a id="links" href="./about.html">About Us / Contact</a></li>
+                                        <li style="padding:0px 30px;"><a id="links" href="./about.html">About Us</a></li>
                                         <li style="padding:0px 30px;"><a id="links" href="./projects.html">Projects</a></li>
                                         <li style="padding:0px 30px;"><a id="links" href="./events.html">Events</a></li>
                                         <li style="padding:0px 30px;"><a id="links" href="./resources.html">Resources</a></li>
@@ -48,19 +59,86 @@
         </div>
 </div>
 
-<iframe src="https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/pubhtml?widget=true&amp;headers=false" width="500" height="500"></iframe>
+<div class="res">
 
-<div style="padding-top:230px;">
-        <div>
-                <p><a href="http://www.sortingh.at/">Sorting Hat</a></p>
-                <p><a href="http://www.pixelprospector.com/indie-resources">Pixel Prospector</a></p>
-        </div>
-</div>
+    <button type="button" class="btn1 collapsed" data-toggle="collapse" data-target="#first" style="margin-top:220px">FIRST STEPS</button>
+    <div class="collapse" id="first">
+        <ul>
+            <br/>
+            <li>
+                <div class="link" align="center">
+                    <a href="http://www.sortingh.at/" target="_blank" style="color:white; text-align:right">Sortingh.at</a>
+                </div>
+            </li>
+            <br/>
+            <li>
+                <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#steps">HOW TO MAKE YOUR FIRST GAME</button>
+                <div class="collapse" id="steps">
+                    <iframe src="https://docs.google.com/document/d/1rOXiXWGZVlvqfaWASrljYJzHP0w48TS61lNcSBSKcJg/pub?embedded=true"
+                            width="100%" height="600px"></iframe>
+                </div>
+            </li>
+            <br/>
+            <li>
+                <button type="button" class="btn2" data-toggle="collapse" data-target="#guide">HOW TO USE THIS SITE</button>
+                <div class="button" id="guide">
 
-<div class="footer" style="bottom: 0;">
-        <div class="container text-center">
-                <p style="color:#666666;">&copy; 2016 <a href="http://www.seangkeenan.com">Sean Keenan</a></p>
-        </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <button type="button" class="btn1 collapsed" data-toggle="collapse" data-target="#tools" style="margin-top:20px">TOOLS</button>
+    <div class="collapse" id="tools">
+        <ul>
+            <br/>
+            <li>
+                <div>
+                    <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#engines">GAME ENGINES</button>
+                    <div class="collapse" id="engines">
+                            <iframe src="https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/pubhtml?gid=0&single=true&widget=false&chrome=false&amp;headers=false"
+                                width="100%" height="600px"></iframe>
+                    </div>
+                </div>
+            </li>
+            <br/>
+            <li>
+                <div>
+                    <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#programming">PROGRAMMING</button>
+                    <div class="collapse" id="programming">
+                            <iframe src="https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/pubhtml?gid=1952400000&single=true&widget=false&chrome=false&amp;headers=false"
+                                width="100%" height="600px" frameborder='0'></iframe>
+                    </div>
+                </div>
+            </li>
+            <br/>
+            <li>
+                <div>
+                    <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#art">ART/ANIMATION</button>
+                    <div class="collapse" id="art">
+                            <iframe src="https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/pubhtml?gid=1581620267&single=true&widget=false&chrome=false&amp;headers=false"
+                                width="100%" height="600px" frameborder='0'></iframe>
+                    </div>
+                </div>
+            </li>
+            <br/>
+            <li>
+                <div>
+                    <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#sound">SOUND/MUSIC</button>
+                    <div class="collapse" id="sound">
+                            <iframe src="https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/pubhtml?gid=66508864&single=true&widget=false&chrome=false&amp;headers=false"
+                                width="100%" height="600px" frameborder='0'></iframe>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <button type="button" class="btn1 collapsed" data-toggle="collapse" data-target="#other" style="margin-top:20px">OTHER</button>
+    <div class="collapse" id="other">
+
+    </div>
+
 </div>
 
 </body>
