@@ -24,10 +24,10 @@
 }
 
 html, body{
-	/*height:100%;*/
 	margin:0;
 	padding:0;
     background-color: var(--light);
+    height:100%;
 }
 
 /* Navigation CSS */
@@ -37,7 +37,7 @@ html, body{
         font-size: 40px;
         color: var(--pri-col-3);
         text-shadow:
-            3px 3px 0 #AAA;
+            2px 2px 0 var(--light);
         /*    3px -3px 0 #AAA,
             -3px 3px 0 #AAA,
             3px 3px 0 #AAA;  */
@@ -85,65 +85,74 @@ html, body{
         margin: auto;
         height: 3px;
         width: 0;
-        background: transparent;
-        transition: width .5s cubic-bezier(0,1,1,0), background-color .5s cubic-bezier(0,1,1,0);
+        background: white;
+        transition: width .5s steps(6, start);
 }
 
 .nav a:hover:after {
         width: 100%;
-        background: var(--light);
+        background: #EEEEEE;
 }
 
 .nav #links {
         font-family: 'O4B';
-        color: var(--light);
+        color: #EEEEEE;
         font-size: 20px;
 }
 
 /* Resources CSS */
 
 .res ul{
-    color: #FFFFFF;
-    font-size: 25px;
+    padding-left: 0px;
+    list-style: none;
 }
 
-.res iframe{
-    border: 5px double #FFFFFF;
-    border-top: none;
-    border-radius: 10px;
+
+.res .links li{
+    display: inline;
+    padding-left: 40px;
 }
 
-.res .link{
-    width: 100%;
-    height: 2em;
+.res .links{
     color: white;
-    background-color: #444444;
-    border: 2px single #FFFFFF;
-    border-radius: 25px;
-    font-size: 20px;
+    font-family: 'Arcade';
+    font-size: 25px;
+    text-align: center;
+    height: 50px;
+    background-color: #666666;
+    border: none;
+    margin-top: 30px;
 }
 
 .res .btn1{
     width: 100%;
-    height: 3em;
+    height: 70px;
     color: #FFFFFF;
     font-family: 'Arcade';
+    font-size: 35px;
+    letter-spacing: 0.3em;
     background-color: var(--pri-col-3);
-    border-radius: 25px;
-    text-align: left;
-    font-size: 30px;
+    border: none;
 }
 
 .res .btn2{
     width: 100%;
-    height: 2em;
+    height: 50px;
     color: #FFFFFF;
     font-family: 'Arcade';
-    background-color: var(--pri-col-3);
-    border: 2px single #FFFFFF;
-    border-radius: 10px;
+    background-color: #888888;
+    border: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.res .links .btn2{
+    width: 15%;
+    height: 35px;
+    background-color: #93bbeb;
+    border-radius: 15px;
+    text-decoration: none;
 }
 
 .res.btn2:focus, .res.btn1:focus{
@@ -270,3 +279,12 @@ html, body{
 }
 
 /* Footer CSS */
+
+.footer {
+    width: 100%;
+    height: 100px;
+
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
