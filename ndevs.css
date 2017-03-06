@@ -16,6 +16,12 @@
   src: url('fonts/Solitarium.ttf');
 }
 
+@font-face {
+    font-family: 'LunchDS';
+    src:url('fonts/lunchds/lunchds.ttf');
+}
+
+
 :root {
     --pri-col-1: #C99700;
     --pri-col-2: #AE9142;
@@ -79,6 +85,10 @@ html, body{
         text-decoration: none;
 }
 
+.nav a:focus{
+        outline: 0;
+}
+
 .nav a:after {
         content: '';
         display: block;
@@ -87,6 +97,7 @@ html, body{
         width: 0;
         background: white;
         transition: width .5s steps(6, start);
+        border: none;
 }
 
 .nav a:hover:after {
@@ -144,15 +155,16 @@ html, body{
     border: none;
     text-align: center;
     font-size: 25px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .res .links .btn2{
     width: 15%;
     height: 35px;
+    font-family: 'LunchDS';
+    text-decoration: none;
     background-color: #93bbeb;
     border-radius: 15px;
-    text-decoration: none;
 }
 
 .res.btn2:focus, .res.btn1:focus{
@@ -170,15 +182,12 @@ html, body{
     width: 100%;
 }
 
-.res .collapse .collapse{
-    border: none;
-}
 
 /* Homepage Jumbotron CSS */
 
 .mission {
         color: #00ee00;
-        font-family: 'Solitarium';
+        font-family: 'Arcade';
         width: 100%;
         word-wrap: break-word;
         display: inline-block;
@@ -252,7 +261,7 @@ html, body{
   font-size: 16px;
   margin: 10px;
   padding: 20px;
-  color: var(--pri-col-3);
+  color: var(--light);
   word-wrap: break-word;
   border: 3px var(--pri-col-3) solid;
   display:inline-block;
@@ -260,6 +269,12 @@ html, body{
   height: 240px;
   position: relative;
   overflow: hidden;
+}
+
+#boardmem p {
+  font-family: 'LunchDS';
+  color: var(--pri-col-3);
+  position: relative;
 }
 
 #boardmem img {
@@ -273,7 +288,6 @@ html, body{
     left: 0;
     top: 0;
     width: 100%;
-    height: auto;
     z-index: 0;
     opacity: 0.3;
 }
