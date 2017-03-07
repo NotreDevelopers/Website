@@ -89,6 +89,11 @@ html, body{
         outline: 0;
 }
 
+.nav a:active{
+    padding-right: 19px;
+    padding-left: 21px;
+}
+
 .nav a:after {
         content: '';
         display: block;
@@ -257,6 +262,10 @@ html, body{
   animation: blinking 1s step-end infinite;
 }
 
+/* About CSS */
+
+
+
 #boardmem {
   font-size: 16px;
   margin: 10px;
@@ -266,7 +275,7 @@ html, body{
   border: 3px var(--pri-col-3) solid;
   display:inline-block;
   float:left;
-  height: 240px;
+  height: auto;
   position: relative;
   overflow: hidden;
 }
@@ -287,6 +296,7 @@ html, body{
     position: absolute;
     left: 0;
     top: 0;
+    height: 100%;
     width: 100%;
     z-index: 0;
     opacity: 0.3;
