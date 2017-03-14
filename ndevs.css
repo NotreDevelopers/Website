@@ -53,83 +53,84 @@ html, body{
 	top: 0px;
 	margin-left: 0px;
 	width: 100%;
-	position: absolute;
+	position: relative;
         background: -moz-linear-gradient(top, var(--pri-col-2) 0%, var(--pri-col-1) 40%); /* FF3.6-15 */
         background: -webkit-linear-gradient(top, var(--pri-col-2) 0%, var(--pri-col-1) 40%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom, var(--pri-col-2) 0%, var(--pri-col-1) 40%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	z-index: 5;
 }
 
-.nav .container {
-
-}
-
-.nav .container .row {
-        position: relative;
+.nav .row {
+    position: relative;
+    width: 150%;
 }
 
 .nav ul {
-        margin: 0px;
+    margin: 0px;
 }
 
 .nav li {
-        display: inline;
+    display: inline;
 }
 
 .nav a {
-        display: inline-block;
-        font-weight: bold;
-        padding-right: 20px;
-        padding-left: 20px;
-        text-transform: uppercase;
-        text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
-.nav a:focus{
-        outline: 0;
+.nav a:focus {
+    outline: 0;
 }
 
-.nav a:active{
+.nav a:active {
     padding-right: 19px;
     padding-left: 21px;
 }
 
 .nav a:after {
-        content: '';
-        display: block;
-        margin: auto;
-        height: 3px;
-        width: 0;
-        background: white;
-        transition: width .5s steps(6, start);
-        border: none;
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0;
+    background: white;
+    transition: width .5s steps(6, start);
+    border: none;
 }
 
 .nav a:hover:after {
-        width: 100%;
-        background: #EEEEEE;
+    width: 100%;
+    background: #EEEEEE;
 }
 
 .nav #links {
-        font-family: 'O4B';
-        color: #EEEEEE;
-        font-size: 20px;
+    font-family: 'O4B';
+    color: #EEEEEE;
+    font-size: 20px;
 }
 
 /* Resources CSS */
 
-.res ul{
+.expand {
+    position: relative;
+}
+
+.expand ul{
     padding-left: 0px;
     list-style: none;
 }
 
 
-.res .links li{
+.expand .links li{
     display: inline;
     padding-left: 40px;
 }
 
-.res .links{
+.expand .links{
     color: white;
     font-family: 'Arcade';
     font-size: 25px;
@@ -140,7 +141,7 @@ html, body{
     margin-top: 30px;
 }
 
-.res .btn1{
+.expand .btn1{
     width: 100%;
     height: 70px;
     color: #FFFFFF;
@@ -151,7 +152,7 @@ html, body{
     border: none;
 }
 
-.res .btn2{
+.expand .btn2{
     width: 100%;
     height: 50px;
     color: #FFFFFF;
@@ -163,7 +164,7 @@ html, body{
     margin-top: 15px;
 }
 
-.res .links .btn2{
+.expand .links .btn2{
     width: 15%;
     height: 35px;
     font-family: 'LunchDS';
@@ -172,18 +173,18 @@ html, body{
     border-radius: 15px;
 }
 
-.res.btn2:focus, .res.btn1:focus{
+.expand .btn2:focus, .expand .btn1:focus{
     outline: none;
 }
 
-.res button.btn1.collapsed:before{
+.expand button.btn1.collapsed:before{
     content:' + ' ;
 }
-.res button.btn1:before{
+.expand button.btn1:before{
     content:' - ' ;
 }
 
-.res .collapse{
+.expand .collapse{
     width: 100%;
 }
 
@@ -264,11 +265,46 @@ html, body{
 
 /* About CSS */
 
+.about {
+    font-size: 20px;
+    font-family: 'LunchDS';
+    position: relative;
+}
 
+.about a {
+    text-decoration: none;
+}
+
+.about .link:focus {
+    outline: none;
+}
+
+.about .link {
+    height: 80px;
+    padding: 10px;
+    margin: 20px;
+
+    border-radius: 4px;
+
+    transition: transform .5s steps(6, start);
+}
+
+.about .link:hover {
+    padding-left: 9px;
+    padding-right: 11px;
+    box-shadow: 0 0 2px 1px var(--pri-col-3);
+}
+
+.about .link:active {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 
 #boardmem {
   font-size: 16px;
-  margin: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding: 20px;
   color: var(--light);
   word-wrap: break-word;
@@ -306,9 +342,10 @@ html, body{
 
 .footer {
     width: 100%;
-    height: 100px;
+    height: auto;
 
     text-align: center;
     position: relative;
-    bottom: 0;
+    margin-top: 10px;
+    padding-bottom: 0px;
 }
