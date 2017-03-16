@@ -44,9 +44,12 @@ html, body{
         color: var(--pri-col-3);
         text-shadow:
             2px 2px 0 var(--light);
-        /*    3px -3px 0 #AAA,
-            -3px 3px 0 #AAA,
-            3px 3px 0 #AAA;  */
+        font-weight: bold;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        position: relative;
 }
 
 .nav {
@@ -192,12 +195,12 @@ html, body{
 /* Homepage Jumbotron CSS */
 
 .mission {
-        color: #00ee00;
+        color: var(--pri-col-3);
         font-family: 'Arcade';
         width: 100%;
         word-wrap: break-word;
         display: inline-block;
-        padding: 220px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
         font-size: 20px;
 }
 
@@ -271,11 +274,8 @@ html, body{
     position: relative;
 }
 
-.about a {
+.about a, .about a:focus {
     text-decoration: none;
-}
-
-.about .link:focus {
     outline: none;
 }
 
@@ -319,6 +319,7 @@ html, body{
 #boardmem p {
   font-family: 'LunchDS';
   color: var(--pri-col-3);
+  text-shadow: 1px 1px 4px #FFFFFF;
   position: relative;
 }
 
@@ -346,6 +347,6 @@ html, body{
 
     text-align: center;
     position: relative;
-    margin-top: 10px;
+    margin-top: 30px;
     padding-bottom: 0px;
 }
