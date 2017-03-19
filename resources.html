@@ -60,22 +60,45 @@
     <div class="collapse" id="first">
         <ul>
             <li>
-                <button type="button" class="btn2" data-toggle="collapse" data-target="#guide">HOW TO USE THIS SITE</button>
-                <div class="button" id="guide">
-
+                <button type="button" class="btn2" data-toggle="collapse" data-target="#guide">HOW TO USE THIS PAGE</button>
+                <div class="collapse" id="guide" style="width:100%; font-family:'ARCADE'; background: #CCCCCC; border:2px solid #0C2340">
+                    <ul style="font-size:20px; font-family:'LunchDS'; padding-left:30px; list-style-type:square">
+                        <li>I'mma test this right here</li>
+                        <li>Double-take</li>
+                    </ul>
                 </div>
             </li>
             <li>
                 <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#steps">HOW TO MAKE YOUR FIRST GAME</button>
-                <div class="collapse" id="steps">
-                    <iframe src="https://docs.google.com/document/d/1rOXiXWGZVlvqfaWASrljYJzHP0w48TS61lNcSBSKcJg/pub?embedded=true"
-                            width="100%" height="600px"></iframe>
+                <div class="collapse" id="steps" style="background: #CCCCCC">
+                    <ul style="width:90%; margin-left:auto; margin-right:auto">
+                        <li style="display:inline">
+                            <button onclick="window.open('')"
+                                type="reset" target="blank_" class="btn3" style="margin:10px 40px 10px 40px">
+                                Blah: <p style="display:inline; font-size:15px">1</p></button>
+                        </li>
+                        <li style="display:inline">
+                            <button onclick="window.open('')"
+                                type="reset" target="blank_" class="btn3" style="margin:10px 40px 10px 40px">
+                                Bluh: <p style="display:inline; font-size:15px">Site 2</p></button>
+                        </li>
+                        <li style="display:inline">
+                            <button onclick="window.open('')"
+                                type="reset" target="blank_" class="btn3" style="margin:10px 40px 10px 40px">
+                                Bleh: <p style="display:inline; font-size:15px">An unnecessarily long and verbose button</p></button>
+                        </li>
+                        <li style="display:inline">
+                            <button onclick="window.open('')"
+                                type="reset" target="blank_" class="btn3" style="margin:10px 40px 10px 40px">
+                                Bleh: <p style="display:inline; font-size:15px">Kill 'em width-kind, Ness</p></button>
+                        </li>
+                    </ul>
                 </div>
             </li>
             <li class="links">
                 <button onclick="window.open('http://www.sortingh.at/')"
-                    type="reset" target="blank_" class="btn2" style="width:600px; margin-top:8px">
-                    Sortingh.at: <p style="display:inline; font-size:15px">A choose-your-own-adventure for game development</p></button>
+                    type="reset" target="blank_" class="btn3">
+                    Sortingh.at: <p style="display:inline; font-size:18px">A choose-your-own-adventure for game development</p></button>
             </li>
         </ul>
     </div>
@@ -121,25 +144,42 @@
             </li>
         </ul>
 
-        <div class="links" style="height: 100px">
+        <div class="links" style="height:auto">
             <p style="font-family:'LunchDS'; display:inline-block; margin-top:20px; padding-left:20px;">Filterable Spreadsheets:</p>
             <ul style="display: inline;">
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/edit?hl=en&ui=2&single=true&rm=demo#gid=0')"
-                    type="reset" target='_blank'  class="btn2">Game Env.</button></li>
+                    type="reset" target='_blank'  class="btn3">Game Env.</button></li>
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/edit?hl=en&ui=2&single=true&rm=demo#gid=1952400000')"
-                    type="reset" target="blank_" class="btn2">Programming</button></li>
+                    type="reset" target="blank_" class="btn3">Programming</button></li>
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/edit?hl=en&ui=2&single=true&rm=demo#gid=1581620267')"
-                    type="reset" target="blank_" class="btn2">Art/Animation</button></li>
+                    type="reset" target="blank_" class="btn3">Art/Animation</button></li>
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/edit?hl=en&ui=2&single=true&rm=demo#gid=66508864')"
-                    type="reset" target="blank_" class="btn2">Sound/Music</button></li>
+                    type="reset" target="blank_" class="btn3">Sound/Music</button></li>
             </ul>
             <p style="font-size:20px; font-family:'LunchDS'">(Click the funnel on the top bar to select/create a filter)</p>
         </div>
     </div>
 
-    <button type="button" class="btn1 collapsed" data-toggle="collapse" data-target="#other" style="margin-top:20px">OTHER</button>
+    <button type="button" class="btn1 collapsed" data-toggle="collapse" data-target="#other" style="margin-top:20px">ASSETS, SITES, ETC</button>
     <div class="collapse" id="other">
-
+        <li>
+            <div>
+                <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#assets">ASSETS</button>
+                <div class="collapse" id="assets">
+                        <iframe src="https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/pubhtml?gid=66508864&single=true&widget=false&chrome=false&amp;headers=false"
+                            width="100%" height="600px"></iframe>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#tutorials">TUTORIALS</button>
+                <div class="collapse" id="tutorials">
+                        <iframe src="https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/pubhtml?gid=66508864&single=true&widget=false&chrome=false&amp;headers=false"
+                            width="100%" height="600px"></iframe>
+                </div>
+            </div>
+        </li>
     </div>
 
 </div>

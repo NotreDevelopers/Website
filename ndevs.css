@@ -167,13 +167,16 @@ html, body{
     margin-top: 15px;
 }
 
-.expand .links .btn2{
-    width: 15%;
+.expand .links .btn3, .expand .btn3{
+    width: auto;
     height: 35px;
+    color: var(--light);
+    font-size: 25px;
     font-family: 'LunchDS';
     text-decoration: none;
     background-color: #93bbeb;
     border-radius: 15px;
+    margin-top: 8px;
 }
 
 .expand .btn2:focus, .expand .btn1:focus{
