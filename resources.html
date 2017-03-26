@@ -35,50 +35,101 @@
 <body class="index">
 
 <div class="nav">
-        <div class="container">
-                <div class="row" style="padding:40px 0px 15px 0px" align="center">
-                                <a id="title" href="./index.html" style="text-decoration:none">NotreDevelopers</a>
-                                <img src="images/NDevsLogo(body).png" alt="NDevs Logo" width="150px" height="150px"
-                                    style="position:absolute; margin-top:-30px; margin-left:10px"></img>
-                                <p id="links" style="margin-top:0px; color:#0C2340">Notre Dame's video game development club</p>
-                        </div>
+        <div class="row" style="width: 100%; padding:40px 0px 15px 30px" align="center">
+                <p id="title" style="text-decoration:none">NotreDevelopers</p>
+                <img src="images/NDevsLogo(body).png" alt="NDevs Logo" width="150px" height="150px"
+                    style="position:relative; margin-top:-30px; top:-67px; left:392px;"></img>
+                <p id="links" style="margin-top:-127px; color:#0C2340">Notre Dame's video game development club</p>
+        </div>
+        <div class="row" style="width:100%; margin-bottom:10px; margin-left:0px; background-color:#0C2340;">
+                <div class="col-lg-12 text-center">
+                        <ul>
+                                <li style="padding:0px 35px;"><a id="links" href="./index.html">Home</a></li>
+                                <li style="padding:0px 35px;"><a id="links" href="./projects.html">Projects</a></li>
+                                <li style="padding:0px 35px;"><a id="links" href="./resources.html">Resources</a></li>
+                                <li style="padding:0px 35px;"><a id="links" href="./about.html">About</a></li>
+                        </ul>
                 </div>
-                <div class="row" style="width:100%; margin-bottom:10px; margin-left:0px; background-color:#0C2340;">
-                        <div class="col-lg-12 text-center">
-                                <ul>
-                                        <li style="padding:0px 35px;"><a id="links" href="./about.html">About</a></li>
-                                        <li style="padding:0px 35px;"><a id="links" href="./projects.html">Projects</a></li>
-                                        <li style="padding:0px 35px;"><a id="links" href="./events.html">Events</a></li>
-                                        <li style="padding:0px 35px;"><a id="links" href="./resources.html">Resources</a></li>
-                                </ul>
-                        </div>
 
-                </div>
         </div>
 </div>
 
-<div class="res" style="padding-top:20px">
+<div class="expand">
 
-    <button type="button" class="btn1 collapsed" data-toggle="collapse" data-target="#first" style="margin-top:220px">FIRST STEPS</button>
+    <button type="button" class="btn1 collapsed" data-toggle="collapse" data-target="#first" style="margin-top:20px">FIRST STEPS</button>
     <div class="collapse" id="first">
         <ul>
             <li>
-                <button type="button" class="btn2" data-toggle="collapse" data-target="#guide">HOW TO USE THIS SITE</button>
-                <div class="button" id="guide">
-
+                <button type="button" class="btn2" data-toggle="collapse" data-target="#guide">HOW TO USE THIS WEBPAGE</button>
+                <div class="collapse" id="guide" style="width:100%; font-size:20px; font-family:'LunchDS'; background: #CCCCCC; border:2px solid #0C2340">
+                    <p style="margin-left:20px; margin-right:20px; margin-bottom:0px">
+                        Hopefully this can explain how to best use this webpage. Just keep in mind that THIS DOES NOT MAKE YOUR GAME.
+                        Its purpose is to give you the proper equipment you need, and beside that, you should spend little time on this page.
+                        Lastly, GIYF (Google Is Your Friend). Ask us anything, but Google more likely has the answer/resource you're looking for.
+                    </p>
+                    <div style="width:100%; height:2px; background:#0C2340; margin-top:2px; margin-bottom:2px"></div>
+                    <p style="margin-left:20px; margin-bottom:0px">There are three sections: <i>First Steps</i>, <i>Tools</i>, and <i>Assets, Sites, Etc.</i></p>
+                    <ul style="margin-left:40px; list-style-type:square">
+                        <li>
+                            <i>First Steps</i>: When you have never used this page or practiced making a game before, this might be the best
+                            section to read first. <u>How to Make Your First Game</u> has a collection of articles laying out useful advice
+                            or steps and tools to use in making your first game, and Sortingh.at is a cool website that allows you to answer
+                            simple questions to determine which tools and assets collections might be useful for you.
+                        </li>
+                        <li>
+                            <i>Tools</i>: Here is our recommended collection of tools for game development. Try to not get stuck on which tools to use; in the
+                            end, as long as it can make your game, it should work. Also, ask us if you need any help or clarification! To search, either
+                            use CTRL-F and keywords on this webpage, or go to the Google Sheets and do refined searching there (like Filters and such).
+                        </li>
+                        <li>
+                            <i>Assets, Sites, Etc.</i>: This is the most important part of the page and the only reason you should continually revisit.
+                            This section contains as many general resources as we can fit into it, for as many styles/makes of games as possible. When
+                            you're making your game and need an asset or tutorial, hopefully we can offer something here. (Search like in <i>Tools</i>)
+                        </li>
+                    </ul>
                 </div>
             </li>
             <li>
                 <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#steps">HOW TO MAKE YOUR FIRST GAME</button>
-                <div class="collapse" id="steps">
-                    <iframe src="https://docs.google.com/document/d/1rOXiXWGZVlvqfaWASrljYJzHP0w48TS61lNcSBSKcJg/pub?embedded=true"
-                            width="100%" height="600px"></iframe>
+                <div class="collapse" id="steps" style="background: #CCCCCC">
+                    <ul style="width:90%; margin-left:auto; margin-right:auto">
+                        <li style="display:inline">
+                            <button onclick="window.open('http://youcanmakevideogames.com/advice')"
+                                type="reset" target="blank_" class="btn3" style="margin:10px 40px 10px 40px">
+                                YouCanMakeVideoGames</button>
+                        </li>
+                        <li style="display:inline">
+                            <button onclick="window.open('https://www.reddit.com/r/gamedev/wiki/getting_started')"
+                                type="reset" target="blank_" class="btn3" style="margin:10px 40px 10px 40px">
+                                r/GameDev: <p style="display:inline; font-size:15px">Getting Started</p></button>
+                        </li>
+                        <li style="display:inline">
+                            <button onclick="window.open('https://gamedevelopment.tutsplus.com/tutorials/bringing-your-game-to-life-in-10-simple-steps--cms-23447')"
+                                type="reset" target="blank_" class="btn3" style="margin:10px 40px 10px 40px">
+                                10-step Breakdown</button>
+                        </li>
+                        <li style="display:inline">
+                            <button onclick="window.open('http://kotaku.com/5979539/a-beginners-guide-to-making-your-first-video-game')"
+                                type="reset" target="blank_" class="btn3" style="margin:10px 40px 10px 40px">
+                                No experience required</button>
+                        </li>
+                        <li style="display:inline">
+                            <button onclick="window.open('https://unity3d.com/learn/tutorials/topics/developer-advice/how-start-your-game-development')"
+                                type="reset" target="blank_" class="btn3" style="margin:10px 40px 10px 40px">
+                                How to Get Started</button>
+                        </li>
+                        <li style="display:inline">
+                            <button onclick="window.open('https://www.scirra.com/tutorials/909/five-things-to-know-before-making-your-first-game')"
+                                type="reset" target="blank_" class="btn3" style="margin:10px 40px 10px 40px">
+                                5 Things to Know</button>
+                        </li>
+                    </ul>
                 </div>
             </li>
             <li class="links">
                 <button onclick="window.open('http://www.sortingh.at/')"
-                    type="reset" target="blank_" class="btn2" style="width:600px; margin-top:8px">
-                    Sortingh.at: <p style="display:inline; font-size:15px">A choose-your-own-adventure for game development</p></button>
+                    type="reset" target="blank_" class="btn3">
+                    Sortingh.at: <p style="display:inline; font-size:18px">A choose-your-own-adventure for game development</p></button>
             </li>
         </ul>
     </div>
@@ -124,32 +175,82 @@
             </li>
         </ul>
 
-        <div class="links" style="height: 100px">
+        <div class="links" style="height:auto">
             <p style="font-family:'LunchDS'; display:inline-block; margin-top:20px; padding-left:20px;">Filterable Spreadsheets:</p>
             <ul style="display: inline;">
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/edit?hl=en&ui=2&single=true&rm=demo#gid=0')"
-                    type="reset" target='_blank'  class="btn2">Game Env.</button></li>
+                    type="reset" target='_blank'  class="btn3">Game Env.</button></li>
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/edit?hl=en&ui=2&single=true&rm=demo#gid=1952400000')"
-                    type="reset" target="blank_" class="btn2">Programming</button></li>
+                    type="reset" target="blank_" class="btn3">Programming</button></li>
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/edit?hl=en&ui=2&single=true&rm=demo#gid=1581620267')"
-                    type="reset" target="blank_" class="btn2">Art/Animation</button></li>
+                    type="reset" target="blank_" class="btn3">Art/Animation</button></li>
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/edit?hl=en&ui=2&single=true&rm=demo#gid=66508864')"
-                    type="reset" target="blank_" class="btn2">Sound/Music</button></li>
+                    type="reset" target="blank_" class="btn3">Sound/Music</button></li>
             </ul>
             <p style="font-size:20px; font-family:'LunchDS'">(Click the funnel on the top bar to select/create a filter)</p>
         </div>
     </div>
 
-    <button type="button" class="btn1 collapsed" data-toggle="collapse" data-target="#other" style="margin-top:20px">OTHER</button>
+    <button type="button" class="btn1 collapsed" data-toggle="collapse" data-target="#other" style="margin-top:20px">ASSETS, SITES, ETC</button>
     <div class="collapse" id="other">
+        <li>
+            <div>
+                <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#assets">ASSETS</button>
+                <div class="collapse" id="assets">
+                        <iframe src="https://docs.google.com/spreadsheets/d/1gaTo5QxqsR6hxmuQrRmT2SQ_Z23SfIXU46dHI0-CZkI/pubhtml?gid=0&single=true&widget=false&chrome=false&amp;headers=false"
+                            width="100%" height="600px"></iframe>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#websites">WEBSITES</button>
+                <div class="collapse" id="websites">
+                        <iframe src="https://docs.google.com/spreadsheets/d/1gaTo5QxqsR6hxmuQrRmT2SQ_Z23SfIXU46dHI0-CZkI/pubhtml?gid=1668770792&single=true&widget=false&chrome=false&amp;headers=false"
+                            width="100%" height="600px"></iframe>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#tutorials">TUTORIALS</button>
+                <div class="collapse" id="tutorials">
+                        <iframe src="https://docs.google.com/spreadsheets/d/1gaTo5QxqsR6hxmuQrRmT2SQ_Z23SfIXU46dHI0-CZkI/pubhtml?gid=1901389117&single=true&widget=false&chrome=false&amp;headers=false"
+                            width="100%" height="600px"></iframe>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div>
+                <button type="button" class="btn2 collapsed" data-toggle="collapse" data-target="#otherAs">OTHER</button>
+                <div class="collapse" id="otherAs">
+                        <iframe src="https://docs.google.com/spreadsheets/d/1gaTo5QxqsR6hxmuQrRmT2SQ_Z23SfIXU46dHI0-CZkI/pubhtml?gid=603627820&single=true&widget=false&chrome=false&amp;headers=false"
+                            width="100%" height="600px"></iframe>
+                </div>
+            </div>
+        </li>
 
+        <div class="links" style="height:auto">
+            <p style="font-family:'LunchDS'; display:inline-block; margin-top:20px; padding-left:20px;">Filterable Spreadsheets:</p>
+            <ul style="display: inline;">
+                <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1gaTo5QxqsR6hxmuQrRmT2SQ_Z23SfIXU46dHI0-CZkI/edit?hl=en&ui=2&single=true&rm=demo#gid=0')"
+                    type="reset" target='_blank'  class="btn3">Assets</button></li>
+                <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1gaTo5QxqsR6hxmuQrRmT2SQ_Z23SfIXU46dHI0-CZkI/edit?hl=en&ui=2&single=true&rm=demo#gid=1668770792')"
+                    type="reset" target="blank_" class="btn3">Websites</button></li>
+                <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1gaTo5QxqsR6hxmuQrRmT2SQ_Z23SfIXU46dHI0-CZkI/edit?hl=en&ui=2&single=true&rm=demo#gid=1901389117')"
+                    type="reset" target="blank_" class="btn3">Tutorials</button></li>
+                <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1gaTo5QxqsR6hxmuQrRmT2SQ_Z23SfIXU46dHI0-CZkI/edit?hl=en&ui=2&single=true&rm=demo#gid=603627820')"
+                    type="reset" target="blank_" class="btn3">Others</button></li>
+            </ul>
+            <p style="font-size:20px; font-family:'LunchDS'">(Click the funnel on the top bar to select/create a filter)</p>
+        </div>
     </div>
 
 </div>
 
 <div class="footer">
-        <div class="container text-center">
-                <p style="color:#666666; margin-top:20px">&copy; 2016 (FOOTER STUFF)</p>
+        <div class="text-center">
+                <p style="color:#666666;">&copy; 2016 (FOOTER STUFF)</p>
         </div>
 </div>
 
