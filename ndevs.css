@@ -170,7 +170,7 @@ html, body{
 .expand .links .btn3, .expand .btn3{
     width: auto;
     height: 35px;
-    color: var(--light);
+    color: #FFFFFF;
     font-size: 25px;
     font-family: 'LunchDS';
     text-decoration: none;
