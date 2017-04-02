@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
     <link rel="stylesheet" href="./ndevs.css">
     <title>NDevs</title>
+    <script type="text/javascript" src="getdate.js"></script>
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-43025367-1', 'auto');
+          ga('send', 'pageview');
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -24,20 +34,23 @@
 
 <body class="index">
 
-<div class="navb">
-        <div class="row" style="margin: 0 0 28px 0" align="center">
-                <h1 id="title">NotreDevelopers</h1>
-                <img src="./images/NDevsLogo(body).png" alt="NDevs Logo" width="150px" height="150px"
-                    style="position:absolute; margin-top:-90px; margin-left:317px"></img>
-                <h1 id="links" style="font-size:20px; margin-top:13px; margin-bottom:0; color:#0C2340">Notre Dame's video game development club</h1>
+<div class="nav">
+        <div class="row" style="width: 100%; padding:40px 0px 15px 30px" align="center">
+                <p id="title" style="text-decoration:none">NotreDevelopers</p>
+                <img src="images/NDevsLogo(body).png" alt="NDevs Logo" width="150px" height="150px"
+                    style="position:relative; margin-top:-30px; top:-67px; left:392px;"></img>
+                <p id="links" style="margin-top:-127px; color:#0C2340">Notre Dame's video game development club</p>
         </div>
-        <div class="row" style="margin:0; padding: 8px; background-color:#0C2340" align="center">
-            <ul>
-                <li><a id="links" href="./index.html">Home</a></li>
-                <li><a id="links" href="./projects.html">Projects</a></li>
-                <li><a id="links" href="./resources.html">Resources</a></li>
-                <li><a id="links" href="./about.html">About</a></li>
-            </ul>
+        <div class="row" style="width:100%; margin-bottom:10px; margin-left:0px; background-color:#0C2340;">
+                <div class="col-lg-12 text-center">
+                        <ul>
+                                <li style="padding:0px 35px;"><a id="links" href="./index.html">Home</a></li>
+                                <li style="padding:0px 35px;"><a id="links" href="./projects.html">Projects</a></li>
+                                <li style="padding:0px 35px;"><a id="links" href="./resources.html">Resources</a></li>
+                                <li style="padding:0px 35px;"><a id="links" href="./about.html">About</a></li>
+                        </ul>
+                </div>
+
         </div>
 </div>
 
@@ -48,30 +61,30 @@
         <ul>
             <li>
                 <button type="button" class="btn2" data-toggle="collapse" data-target="#guide">HOW TO USE THIS WEBPAGE</button>
-                <div class="collapse" id="guide" style="width:100%; background: #CCCCCC; border:2px solid #0C2340">
+                <div class="collapse" id="guide" style="width:100%; font-size:20px; font-family:'LunchDS'; background: #CCCCCC; border:2px solid #0C2340">
                     <p style="margin-left:20px; margin-right:20px; margin-bottom:0px">
                         Hopefully this can explain how to best use this webpage. Just keep in mind that THIS DOES NOT MAKE YOUR GAME.
                         Its purpose is to give you the proper equipment you need, and beside that, you should spend little time on this page.
-                        Also, GIYF (Google Is Your Friend). Ask us anything, but Google more likely has the answer/resource you're looking for.
+                        Lastly, GIYF (Google Is Your Friend). Ask us anything, but Google more likely has the answer/resource you're looking for.
                     </p>
                     <div style="width:100%; height:2px; background:#0C2340; margin-top:2px; margin-bottom:2px"></div>
                     <p style="margin-left:20px; margin-bottom:0px">There are three sections: <i>First Steps</i>, <i>Tools</i>, and <i>Assets, Sites, Etc.</i></p>
                     <ul style="margin-left:40px; list-style-type:square">
                         <li>
-                            <p><i>First Steps</i>: When you have never used this page or practiced making a game before, this might be the best
+                            <i>First Steps</i>: When you have never used this page or practiced making a game before, this might be the best
                             section to read first. <u>How to Make Your First Game</u> has a collection of articles laying out useful advice
                             or steps and tools to use in making your first game, and Sortingh.at is a cool website that allows you to answer
-                            simple questions to determine which tools and assets collections might be useful for you.</p>
+                            simple questions to determine which tools and assets collections might be useful for you.
                         </li>
                         <li>
-                            <p><i>Tools</i>: Here is our recommended collection of tools for game development. Try to not get stuck on which tools to use; in the
+                            <i>Tools</i>: Here is our recommended collection of tools for game development. Try to not get stuck on which tools to use; in the
                             end, as long as it can make your game, it should work. Also, ask us if you need any help or clarification! To search, either
-                            use CTRL-F and keywords on this webpage, or go to the Google Sheets and do refined searching there (like Filters and such).</p>
+                            use CTRL-F and keywords on this webpage, or go to the Google Sheets and do refined searching there (like Filters and such).
                         </li>
                         <li>
-                            <p><i>Assets, Sites, Etc.</i>: This is the most important part of the page and the only reason you should continually revisit.
+                            <i>Assets, Sites, Etc.</i>: This is the most important part of the page and the only reason you should continually revisit.
                             This section contains as many general resources as we can fit into it, for as many styles/makes of games as possible. When
-                            you're making your game and need an asset or tutorial, hopefully we can offer something here. (Search like in <i>Tools</i>)</p>
+                            you're making your game and need an asset or tutorial, hopefully we can offer something here. (Search like in <i>Tools</i>)
                         </li>
                     </ul>
                 </div>
@@ -88,7 +101,7 @@
                         <li style="display:inline">
                             <button onclick="window.open('https://www.reddit.com/r/gamedev/wiki/getting_started')"
                                 type="reset" target="blank_" class="btn3" style="margin:10px 40px 10px 40px">
-                                r/GameDev</button>
+                                r/GameDev: <p style="display:inline; font-size:15px">Getting Started</p></button>
                         </li>
                         <li style="display:inline">
                             <button onclick="window.open('https://gamedevelopment.tutsplus.com/tutorials/bringing-your-game-to-life-in-10-simple-steps--cms-23447')"
@@ -116,7 +129,7 @@
             <li class="links">
                 <button onclick="window.open('http://www.sortingh.at/')"
                     type="reset" target="blank_" class="btn3">
-                    Sortingh.at: A choose-your-own-adventure for game development</button>
+                    Sortingh.at: <p style="display:inline; font-size:18px">A choose-your-own-adventure for game development</p></button>
             </li>
         </ul>
     </div>
@@ -162,8 +175,8 @@
             </li>
         </ul>
 
-        <div class="links" style="height:auto; padding-top:5px; padding-bottom:5px">
-            <h3 style="display:inline; margin-top:20px; margin-left:20px;">Filterable Spreadsheets:</h3>
+        <div class="links" style="height:auto">
+            <p style="font-family:'LunchDS'; display:inline-block; margin-top:20px; padding-left:20px;">Filterable Spreadsheets:</p>
             <ul style="display: inline;">
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/edit?hl=en&ui=2&single=true&rm=demo#gid=0')"
                     type="reset" target='_blank'  class="btn3">Game Env.</button></li>
@@ -174,7 +187,7 @@
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1mwuTgb_k6yttLWN1T7g-K3vWe7mf_BlFylQNQrsYh-U/edit?hl=en&ui=2&single=true&rm=demo#gid=66508864')"
                     type="reset" target="blank_" class="btn3">Sound/Music</button></li>
             </ul>
-            <h3 style="font-size:20px">(Click the funnel on the top bar to select/create a filter)</h3>
+            <p style="font-size:20px; font-family:'LunchDS'">(Click the funnel on the top bar to select/create a filter)</p>
         </div>
     </div>
 
@@ -217,8 +230,8 @@
             </div>
         </li>
 
-        <div class="links" style="height:auto; padding-top:5px; padding-bottom:5px">
-            <h3 style="display:inline; margin-top:20px; padding-left:20px;">Filterable Spreadsheets:</h3>
+        <div class="links" style="height:auto">
+            <p style="font-family:'LunchDS'; display:inline-block; margin-top:20px; padding-left:20px;">Filterable Spreadsheets:</p>
             <ul style="display: inline;">
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1gaTo5QxqsR6hxmuQrRmT2SQ_Z23SfIXU46dHI0-CZkI/edit?hl=en&ui=2&single=true&rm=demo#gid=0')"
                     type="reset" target='_blank'  class="btn3">Assets</button></li>
@@ -229,7 +242,7 @@
                 <li><button onclick="window.open('https://docs.google.com/spreadsheets/d/1gaTo5QxqsR6hxmuQrRmT2SQ_Z23SfIXU46dHI0-CZkI/edit?hl=en&ui=2&single=true&rm=demo#gid=603627820')"
                     type="reset" target="blank_" class="btn3">Others</button></li>
             </ul>
-            <h3 style="font-size:20px">(Click the funnel on the top bar to select/create a filter)</h3>
+            <p style="font-size:20px; font-family:'LunchDS'">(Click the funnel on the top bar to select/create a filter)</p>
         </div>
     </div>
 
