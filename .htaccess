@@ -5,7 +5,7 @@ RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond $1 !^(index\.php)
-RewriteRule ^(.*)$ /~lbiasco/test/index.php/$1
+RewriteRule ^(.*)$ /~ndevs/index.php/$1
 
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www3.nd.edu%{REQUEST_URI} [R,L]

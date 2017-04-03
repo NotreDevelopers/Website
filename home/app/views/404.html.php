@@ -22,8 +22,8 @@
                         <ul>
                                 <li><a id="links" href="<?php echo config('site.url')?>">Home</a></li>
                                 <li><a id="links" href="<?php echo config('site.url')?>projects.html">Projects</a></li>
-                                <li><a id="links" href="./resources.html">Resources</a></li>
-                                <li><a id="links" href="./about.html">About</a></li>
+                                <li><a id="links" href="<?php echo config('site.url')?>resources.html">Resources</a></li>
+                                <li><a id="links" href="<?php echo config('site.url')?>about.html">About</a></li>
                         </ul>
         </div>
     </div>

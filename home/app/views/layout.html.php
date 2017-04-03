@@ -31,7 +31,7 @@
         </div>
         <div class="row" style="margin:0; padding: 8px; background-color:#0C2340" align="center">
 		<ul>
-			<li><a id="links" href="<?php echo config('site.url')?>index.html">Home</a></li>
+			<li><a id="links" href="<?php echo config('site.url')?>">Home</a></li>
 			<li><a id="links" href="<?php echo config('site.url')?>projects.html">Projects</a></li>
 			<li><a id="links" href="<?php echo config('site.url')?>resources.html">Resources</a></li>
 			<li><a id="links" href="<?php echo config('site.url')?>about.html">About</a></li>
@@ -40,6 +40,10 @@
 </div>
 
 <?php echo content()?>
+
+<div class="footer">
+        <p style="color:#666666; margin-top:20px">&copy; 2017 NotreDevelopers</p>
+</div>
 
 </body>
 </html>
