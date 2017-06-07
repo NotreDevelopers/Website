@@ -42,7 +42,7 @@
 <?php echo content()?>
 
 <div class="footer">
-        <p style="color:#666666; margin-top:20px">&copy; 2017 NotreDevelopers</p>
+        <h2>&copy; 2017 NotreDevelopers</h2>
 </div>
 
 </body>

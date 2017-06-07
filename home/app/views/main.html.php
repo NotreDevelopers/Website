@@ -58,4 +58,6 @@
 
 		<?php if ($has_pagination['next']):?>
 			<a href="?page=<?php echo $page+1?>" class="pagination-arrow older">Older</a>
-		<?php endif;
+		<?php endif;?>
+
+	</section>
